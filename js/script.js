@@ -10,16 +10,19 @@ function init() {
 //FOLLOWER
 var x, y;
 
-window.addEventListener('mousemove', function(event){
+
+window.addEventListener('mousemove', onMousemove)
+
+function onMousemove (event){
   x = event.clientX;
   y = event.clientY;
   if ( typeof x !== 'undefined' ){
     follower.style.left = x + "px";
     follower.style.top = y + "px";
+  
+  x.acceleration = 0.2;
+  y.acceleration = 0.2;
 }
-}, false);
-}
-
 
 
   function onCloseClick() {
