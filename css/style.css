@@ -39,6 +39,18 @@ a {
   line-height: 2rem;
 }
 
+/*
+    MENU FOLLOWER
+*/
+.follower {
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background-color:pink;
+  mix-blend-mode: difference;
+}
+
 
 
 /*
